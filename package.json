@@ -2,6 +2,7 @@
   "name": "angular-food-app",
   "version": "0.0.0",
   "scripts": {
+    "tailWind": "npx tailwindcss -i ./src/input.css -o ./src/styles.css --watch",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -33,6 +34,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "tailwindcss": "^3.3.3",
     "typescript": "~5.1.3"
   }
 }

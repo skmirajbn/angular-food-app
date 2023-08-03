@@ -1,0 +1,13 @@
+<ul class="flex justify-center items-center flex-wrap">
+  <li *ngFor="let food of foods">
+    <a class="h-80 w-80 border-[1px] border-gray-300 rounded-xl m-2 flex flex-col overflow-hidden text-[#e72929]"
+      ><img class="w-ful h-60 object-cover hover:opacity-90 cursor-pointer" src="{{ food.imageUrl }}" alt="food image" />
+      <div class="content">
+        <div class="name">
+          {{ food.name }}
+        </div>
+        <span class=" {{ food.favorite ? '' : 'text-black' }}">❤</span>
+      </div>
+    </a>
+  </li>
+</ul>
